@@ -2,44 +2,37 @@
  <div id="app">
   
    <nav>
-      <router-link to="/login">Log In</router-link> |
+      <router-link to="/">Log In</router-link> |
        <router-link to="/game">Game</router-link>
    </nav>
-  
-   
+   <router-view/>
+
  </div>
 
-   
 
-     
 </template>
 
-<!-- <script>
-// import HelloWorld from '@/components/HelloWorld.vue'
-//   export default {
-//     name : ""
-//     components: {
-//     LoginView,
-//      },
-    
-//   }
-// </script>
--->
+
+<script>
+  export default {
+    name: 'App',
+  }
+</script>
 
 
 
-<style lang="scss">
-#app {
+<style lang="scss"  >
+nav {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
   background-color:#222629;
+   padding: 30px;
 }
 
-nav {
-  padding: 30px;
+
 
   a {
     font-weight: bold;
@@ -49,11 +42,11 @@ nav {
       color: #42b983;
     }
   }
-}
-#form{
- padding-left: 200px;
- font: white;
-}
+  html{
+    background-color: antiquewhite;
+  }
+
+
 </style>
 
 

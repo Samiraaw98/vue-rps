@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import LoginView from '@/views/LoginView'
+import LogView from '@/views/LogView'
 import GameView from '@/views/GameView'
 
 Vue.use(VueRouter)
@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'login',
-    component: LoginView
+    component: LogView
   },
   {
     path: '/game',
